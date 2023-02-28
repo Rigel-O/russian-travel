@@ -1,0 +1,28 @@
+.card {
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: minmax(440px, 460px) minmax(456px, 484px);
+  gap: 40px;
+}
+
+.card:last-of-type {
+  margin: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .card {
+    gap: 48px 28px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card {
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+
