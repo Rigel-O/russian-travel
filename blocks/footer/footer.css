@@ -2,12 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 92px 48px 24px;
+  padding: 92px 0 24px;
+  max-width:  calc(100% - 96px);
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1023px) {
   .footer {
     padding-top: 88px;
+    max-width: calc(100% - 48px);
   }
 }
 
@@ -15,6 +18,8 @@
   .footer {
     flex-direction: column;
     padding-top: 64px;
-    padding-left: 16px;
+    max-width: calc(100% - 32px);
+    margin: 0;
+    margin-left: 16px;
   }
 }

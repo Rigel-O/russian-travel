@@ -5,19 +5,13 @@
   max-height: 740px;
   padding-top: 62.5%;
   display: block;
+  background-image: url(../../../images/__background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .cover__link::before {
-  content: '';
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color:rgba(42, 44, 47, 0);
-  transition: background-color .2s linear;
-}
-
-.cover__link:hover:before {
   content: '';
   display: block;
   position: absolute;
@@ -25,5 +19,12 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color:rgba(42, 44, 47, .8);
+  background-color: #2A2C2F;
+  opacity: .3;
+  transition: opacity .2s linear;
+}
+
+.cover__link:hover:before {
+
+  opacity: .8;
 }
